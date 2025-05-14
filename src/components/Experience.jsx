@@ -5,6 +5,8 @@ import helixgade from "../assets/helixgade-logo.png";
 import olotu from "../assets/olotu.png";
 import bernode from "../assets/bernode.jpeg";
 import eventeev from "../assets/eventeev.png";
+import astronaut from "../assets/astronaut-straight.png";
+import pattern from "../assets/footer-pattern.svg";
 
 const Experience = () => {
     const experiences = [
@@ -47,11 +49,13 @@ const Experience = () => {
 ];
 
   return (
-    <section className="font-[Inter] mt-[50px]">
+    <section className="font-[Inter] mt-[100px] relative">
+        <img src={pattern} alt="Pattern" className="absolute -top-20" />
       <FadeIn duration={400}>
-        <h1 className="text-5xl font-bold space-x-4 leading-20 text-center">
+        <h1 className="text-5xl font-bold space-x-4 leading-20 text-center relative">
           <span className="text-white">My</span>
           <span className="text-[#CBACF9]">work experience</span>
+            <img src={astronaut} alt="A picture of an astronaut standing" className="absolute left-[67%] -top-4 h-[80px]" />
         </h1>
       </FadeIn>
       <div className="grid grid-cols-2 grid-rows-2 gap-x-3 gap-y-5 mx-[60px] py-[50px]">

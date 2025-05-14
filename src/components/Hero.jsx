@@ -14,6 +14,7 @@ import yellowMsg from "../assets/yellow-msg.svg";
 import purpleMsg from "../assets/purple-msg.svg";
 import emailBg from "../assets/backgroundblobservicepng.svg";
 import fade from "../assets/fade.png";
+import astronaut from "/astronaut-sitting.png";
 
 // import icons
 import { FaGithub } from "react-icons/fa";
@@ -90,6 +91,7 @@ const Hero = () => {
               Do you want to start <br /> a project together?
             </h2>
             <CopyEmailButton/>
+            <img src={astronaut} alt="An astronaut sitting with a laptop" className="absolute right-5 bottom-2.5 h-[80px]" />
           </div>
 
           {/* skills */}

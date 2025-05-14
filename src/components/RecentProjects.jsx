@@ -3,6 +3,7 @@ import "@fontsource/inter";
 import FadeIn from "./FadeInWrapper";
 import highlight from "../assets/projects-highlight.png";
 import { FiArrowUpRight } from "react-icons/fi";
+import astronaut from "../assets/astronaut-dab.png";
 
 const RecentProjects = () => {
   const projects = [
@@ -68,11 +69,12 @@ const RecentProjects = () => {
   ];
 
   return (
-    <section className="mt-[100px] font-[Inter]">
+    <section className="mt-[150px] font-[Inter]">
       <FadeIn duration={400}>
-        <h1 className="text-5xl font-bold space-x-4 leading-20 text-center">
+        <h1 className="text-5xl font-bold space-x-4 leading-20 text-center relative">
           <span className="text-white">A small selection of</span>
           <span className="text-[#CBACF9]">recent projects</span>
+          <img src={astronaut} alt="A picture of an astronaut dabbing" className="absolute left-[50%] -top-[55px] h-[70px]" />
         </h1>
       </FadeIn>
 
