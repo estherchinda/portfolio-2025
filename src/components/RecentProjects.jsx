@@ -69,7 +69,7 @@ const RecentProjects = () => {
   ];
 
   return (
-    <section className="mt-[150px] font-[Inter]">
+    <section id="projects" className="mt-[150px] font-[Inter]">
       <FadeIn duration={400}>
         <h1 className="text-5xl font-bold space-x-4 leading-20 text-center relative">
           <span className="text-white">A small selection of</span>

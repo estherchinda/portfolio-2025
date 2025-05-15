@@ -25,7 +25,7 @@ const Hero = () => {
   const skills = ["Javascript", "Tailwindcss", "HTML5", "Vanilla CSS", "NPM"];
 
   return (
-    <section className="h-full bg-linear-to-r from-[#161A31] to-[#0C0F24] relative font-[Inter]">
+    <section id="top" className="h-full bg-linear-to-r from-[#161A31] to-[#0C0F24] relative font-[Inter]">
       <img src={pattern} alt="Pattern" className="z-10" />
       <img src={spotlightLeft} alt="" className="absolute top-0 left-0" />
       <img src={spotlightRight} alt="" className="absolute top-0 right-0" />
@@ -58,7 +58,7 @@ const Hero = () => {
       </div>
 
       {/* about me */}
-      <section>
+      <section id="about">
         <div className="grid grid-cols-2 grid-rows-2 gap-5 absolute top-[90%] bg-linear-to-r from-[#161A31] to-[#0C0F24] px-[80px] pb-[30px]">
           <div className="row-span-2 relative border-[0.1px] border-[#272A3C] rounded-[23px] shadow-sm hover:cursor-pointer">
             <img src={laptop} className="rounded-[23px] h-[541px]" />

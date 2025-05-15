@@ -49,7 +49,7 @@ const Experience = () => {
 ];
 
   return (
-    <section className="font-[Inter] mt-[100px] relative">
+    <section id="experience" className="font-[Inter] mt-[100px] relative">
         <img src={pattern} alt="Pattern" className="absolute -top-20" />
       <FadeIn duration={400}>
         <h1 className="text-5xl font-bold space-x-4 leading-20 text-center relative">

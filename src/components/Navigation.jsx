@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
   const links = [
-    { label: "About", route: "/about" },
-    { label: "Projects", route: "/projects" },
-    { label: "Testimonials", route: "/testimonials" },
-    { label: "Contact", route: "/contact" },
+    { label: "About", route: "about" },
+    { label: "Projects", route: "projects" },
+    { label: "Experience", route: "experience" },
+    { label: "Contact", route: "contact" },
   ];
 
   const [activeTab, setActiveTab] = useState(1);
@@ -29,7 +30,7 @@ const Navigation = () => {
                     : "text-[#C1C2D3] hover:text-[#fff] "
                 } hover:cursor-pointer font-semibold transition-all duration-300`}
               >
-                {link.label}
+                <Link to={link.route} smooth={true}>{link.label}</Link>
               </li>
               {activeTab === index && (
                 <span className="h-2 w-2 bg-white rounded-full absolute -bottom-[22px]"></span>
