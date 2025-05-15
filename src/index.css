@@ -26,3 +26,30 @@ button:hover::after {
   background: linear-gradient(to right, #04071D, #0C0E23);
 }
 
+@keyframes scrollSkills {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scrollFrameworks {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-skills {
+  animation: scrollSkills 5s linear infinite;
+}
+
+.animate-scroll-frameworks {
+  animation: scrollFrameworks 5s linear infinite;
+}
+
+

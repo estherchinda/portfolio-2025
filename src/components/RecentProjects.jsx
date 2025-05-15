@@ -71,22 +71,22 @@ const RecentProjects = () => {
   return (
     <section id="projects" className="mt-[150px] font-[Inter]">
       <FadeIn duration={400}>
-        <h1 className="text-5xl font-bold space-x-4 leading-20 text-center relative">
+        <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold space-x-4 leading-10 md:leading-16 lg:leading-20 text-center relative">
           <span className="text-white">A small selection of</span>
           <span className="text-[#CBACF9]">recent projects</span>
-          <img src={astronaut} alt="A picture of an astronaut dabbing" className="absolute left-[50%] -top-[55px] h-[70px]" />
+          <img src={astronaut} alt="A picture of an astronaut dabbing" className="absolute left-[50%] -top-[55px] h-[50px] md:h-[70px] lg:h-[70px]" />
         </h1>
       </FadeIn>
 
-      <div className="grid grid-cols-2 grid-rows-2 gap-x-3 gap-y-5 mx-[60px] py-[50px]">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-10 lg:gap-x-3 lg:gap-y-5 mx-[20px] md:mx-[50px] lg:mx-[60px] py-[50px]">
         {projects.map((project, index) => (
           <FadeIn
             key={index}
             duration={project.duration}
-            className="w-[600px] h-[618px] rounded-[23px] gradient-bg flex justify-center items-center flex-col px-6"
+            className="w-full md:w-[600px] lg:w-[600px] h-full md:h-[620px] lg:h-[618px] rounded-[23px] gradient-bg flex justify-center items-center flex-col px-6 py-6 md:py-0 lg:py-0"
           >
             <div className="space-y-5">
-              <div className="bg-[#13162D] h-[330px] w-[552px] rounded-[14px] relative flex justify-center items-center overflow-hidden">
+              <div className="bg-[#13162D] h-[300px] md:h-[330px] lg:h-[330px] w-full md:w-[552px] lg:w-[552px] rounded-[14px] relative flex justify-center items-center overflow-hidden">
                 <img
                   src={highlight}
                   alt="bg-highlight"
@@ -98,10 +98,10 @@ const RecentProjects = () => {
                   className="z-10 w-[400px] h-[300px] object-cover rounded-[10px] rotate-3 mt-20"
                 />
               </div>
-              <h2 className="text-[30px] font-bold text-white text-center">
+              <h2 className="text-xl md:text-[30px] lg:text-[30px] font-bold text-white text-center">
                 {project.title}
               </h2>
-              <p className="text-[#BEC1DD] text-xl font-normal text-center">
+              <p className="text-[#BEC1DD] text-sm md:text-xl lg:text-xl font-normal text-center">
                 {project.description}
               </p>
             </div>
@@ -110,12 +110,12 @@ const RecentProjects = () => {
                 {project.tools.map((tool, index) => (
                   <div
                     key={index}
-                    className="w-[50px] h-[50px] rounded-full border-[0.1px] border-[#272A3C] gradient-bg flex justify-center items-center"
+                    className="w-[30px] h-[30px] md:w-[50px] md:h-[50px] lg:w-[50px] lg:h-[50px] rounded-full border-[0.1px] border-[#272A3C] gradient-bg flex justify-center items-center"
                   >
                     <img
                       src={tool}
                       alt="Tools"
-                      className="h-[24px] w-[24px] rounded object-contain"
+                      className="h-[18px] w-[18px] md:h-[24px] md:w-[24px] lg:h-[24px] lg:w-[24px] rounded object-contain"
                     />
                   </div>
                 ))}
@@ -125,10 +125,10 @@ const RecentProjects = () => {
                 target="_blank"
                 className="text-[#CBACF9] space-x-1.5 group"
               >
-                <span className="font-medium text-md group-hover:text-purple-400 transition-colors duration-300">
+                <span className="font-medium text-xs md:text-sm lg:text-md group-hover:text-purple-400 transition-colors duration-300">
                   Check Live Site
                 </span>
-                <FiArrowUpRight className="inline text-2xl group-hover:text-purple-400 transition-colors duration-300" />
+                <FiArrowUpRight className="inline text-lg md:text-xl lg:text-2xl group-hover:text-purple-400 transition-colors duration-300" />
               </a>
             </div>
           </FadeIn>

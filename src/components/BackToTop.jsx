@@ -12,7 +12,7 @@ const BackToTop = () => {
   });
 
   return (
-    <div className={`${isScrolled ? "block": "hidden"} flex justify-center fixed bottom-14 right-[100px] z-20`}>
+    <div className={`${isScrolled ? "block": "hidden"} flex justify-center fixed bottom-10 md:bottom-12 lg:bottom-14 right-[40%] md:right-[100px] lg:right-[100px] z-20`}>
         <Link to="top" smooth={true} className='h-[60px] w-[60px] bg-gray-900 flex justify-center items-center rounded-full hover:cursor-pointer border-[0.1px] border-[#fff]'>
             <span className='text-white'>
                 <IoIosArrowRoundUp className='text-4xl'/>
